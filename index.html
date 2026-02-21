@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Влияние смартфона</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+<nav>
+<ul>
+<li><a href="#home">Главная</a></li>
+<li><a href="#results">Результаты</a></li>
+<li><a href="#recommendations">Рекомендации</a></li>
+<li><a href="#test">Мини‑тест</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="section hero">
+<h1>Влияние использования смартфона на сон и успеваемость</h1>
+<p>Исследование взаимосвязи цифровой активности учащихся и качества сна.</p>
+</section>
+
+<section class="section about">
+<h2>Актуальность проблемы</h2>
+<div class="stats">
+<div class="stat-card"><h3>3–5 ч</h3><p>Среднее экранное время</p></div>
+<div class="stat-card"><h3>40%</h3><p>Спят менее 7 часов</p></div>
+<div class="stat-card"><h3>60%</h3><p>Используют телефон перед сном</p></div>
+<div class="stat-card"><h3>35%</h3><p>Снижение концентрации</p></div>
+</div>
+</section>
+
+<section id="results" class="section results">
+<h2>Результаты исследования</h2>
+
+<div class="charts">
+<canvas id="usageChart"></canvas>
+<canvas id="sleepChart"></canvas>
+</div>
+
+<p>Увеличение экранного времени связано с ухудшением качества сна.</p>
+
+</section>
+
+<section id="recommendations" class="section recommendations">
+<h2>Практические рекомендации</h2>
+<div class="cards">
+<div class="card">🌙 Не использовать смартфон за 1 час до сна</div>
+<div class="card">⏰ Ограничить экранное время</div>
+<div class="card">👁 Использовать защиту зрения</div>
+<div class="card">🔕 Отключать уведомления ночью</div>
+<div class="card">🛏 Убирать телефон из зоны сна</div>
+<div class="card">⏳ Делать регулярные перерывы</div>
+<div class="card">📚 Использовать для учебы</div>
+<div class="card">📅 Планировать режим дня</div>
+</div>
+</section>
+
+<section id="test" class="section test">
+<h2>Мини‑тест</h2>
+
+<div class="question">
+1. Пользуетесь телефоном перед сном?<br>
+<button onclick="answer(this,1)">Да</button>
+<button onclick="answer(this,0)">Нет</button>
+</div>
+
+<div class="question">
+2. Более 4 часов в день в телефоне?<br>
+<button onclick="answer(this,1)">Да</button>
+<button onclick="answer(this,0)">Нет</button>
+</div>
+
+<div class="question">
+3. Засыпаете с трудом?<br>
+<button onclick="answer(this,1)">Да</button>
+<button onclick="answer(this,0)">Нет</button>
+</div>
+
+<div class="question">
+4. Отвлекаетесь во время учебы?<br>
+<button onclick="answer(this,1)">Да</button>
+<button onclick="answer(this,0)">Нет</button>
+</div>
+
+<div class="question">
+5. Чувствуете усталость утром?<br>
+<button onclick="answer(this,1)">Да</button>
+<button onclick="answer(this,0)">Нет</button>
+</div>
+
+<div id="result"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

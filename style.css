@@ -1,0 +1,144 @@
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#f4f6fb;
+}
+
+header{
+position:fixed;
+width:100%;
+background:#1f2a44;
+padding:10px 0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:600;
+}
+
+.section{
+min-height:80vh;
+padding:60px 20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero{
+background:linear-gradient(135deg,#4e73df,#6f42c1);
+color:white;
+}
+
+.about{
+background:#e3f2fd;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:900px;
+margin:40px auto 0 auto;
+justify-items:center;  
+}
+
+.stat-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.results{
+background:white;
+}
+
+.charts{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+margin:40px auto;
+max-width:900px;
+}
+
+canvas{
+width:320px !important;
+height:320px !important;
+}
+
+.recommendations{
+background:linear-gradient(135deg,#d4edda,#c3e6cb);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin-top:40px;
+justify-items:center;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.test{
+background:white;
+}
+
+.question{
+margin:20px 0;
+}
+
+button{
+margin:10px;
+padding:10px 20px;
+border:none;
+background:#4e73df;
+color:white;
+border-radius:8px;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#2e59d9;
+}
+
+button.selected{
+background:#28a745;
+transform:scale(1.05);
+}
+
+button:disabled{
+opacity:0.7;
+cursor:not-allowed;
+}
+
+#restartBtn{
+margin-top:20px;
+background:#e74a3b;
+}
